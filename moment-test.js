@@ -11,3 +11,9 @@ const date1ISO = moment(nativeD).local().toISOString();
 const date2ISO = moment('2021-11-30 22:30').toISOString();
 console.log("🚀 ~ file: moment-test.js ~ line 10 ~ date1ISO", date1ISO)
 console.log("🚀 ~ file: moment-test.js ~ line 11 ~ date2ISO", date2ISO)
+
+const result = moment().isAfter(new Date('2021-12-29 23:59'), 'day')
+console.log("🚀 ~ file: moment-test.js ~ line 16 ~ result", result)
+
+const dateM = moment('2022-01-08T00:00:00.000Z').utc(false).format('DD/MM/YYYY')
+console.log("🚀 ~ file: moment-test.js ~ line 19 ~ dateM", dateM)
