@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "scripts": {
+    "n:start": "nodemon native-date.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -19,5 +20,8 @@
     "url": "https://github.com/dsolerh/js-algoritms/issues"
   },
   "homepage": "https://github.com/dsolerh/js-algoritms#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
