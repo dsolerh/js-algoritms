@@ -25,7 +25,7 @@ d2 = new Date("2021-10-30 10:30");
  * devuelve false si date es mayor o igual al dia actual
  * @param {Date} date
  */
- function isADayBefore(date) {
+function isADayBefore(date) {
   const today = new Date();
 
   return (
@@ -35,20 +35,18 @@ d2 = new Date("2021-10-30 10:30");
   );
 }
 
-console.log(isADayBefore(new Date("2022-01-14 00:00:00")));
+const ldate = new Date("2022-03-10");
+console.log(
+  "🚀 ~ file: native-date.js ~ line 39 ~ ldate.getTimezoneOffset()",
+  ldate.getTimezoneOffset()
+);
+console.log(
+  "🚀 ~ file: native-date.js ~ line 41 ~ ldate.toString()",
+  ldate.toString()
+);
+console.log(
+  "🚀 ~ file: native-date.js ~ line 42 ~ ldate.toUTCString()",
+  ldate.toUTCString()
+);
 
-function isSameDate(params) {
-  
-}
-
-/**
- * 
- * @param {Date} from 
- * @param {Date} to 
- */
-function rangeOfDays(from, to) {
-  while (from.getUTCDate()) {
-    
-    yield 0
-  }
-}
+new Date(2022, 0, 16, 12, 0, 0, 0);
