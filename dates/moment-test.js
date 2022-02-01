@@ -22,7 +22,8 @@ const dateM = moment("2022-01-08T00:00:00.000Z")
 
 const aDayAfrer = moment(new Date("2021-12-30")).subtract(1, "day");
 // console.log("🚀 ~ file: moment-test.js ~ line 21 ~ aDayAfrer", aDayAfrer);
-const diff = moment("2021-12-31").diff(moment("2021-12-30 23:59"), '');
+const diff = moment("2021-12-31").diff(moment("2021-12-30 23:59"), "");
 // console.log("🚀 ~ file: moment-test.js ~ line 25 ~ diff", diff);
 
-console.log(moment('2022-01-01').get('isoWeekYear'));
+// console.log(moment("2022-01-01").get("isoWeekYear"));
+console.log(moment().isBefore(moment("2022-02-01"), 'day'));
