@@ -1,10 +1,12 @@
 const _ = require("lodash");
 
-const r = _.flatMap([
+const r = _.map(
   {
-    daniel: {
-      is: "great",
-    },
+    a: [2, 4, 6],
+    b: [1, 3, 5],
   },
-]);
+  // (v) => {
+  //   console.log(v);
+  // }
+);
 console.log("🚀 ~ file: basic.js ~ line 8 ~ r", r);
