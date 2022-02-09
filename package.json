@@ -1,6 +1,6 @@
 {
   "name": "js-algoritms",
-  "version": "1.0.2-2",
+  "version": "1.0.3-0",
   "main": "index.js",
   "scripts": {
     "n:start": "nodemon native-date.js",
