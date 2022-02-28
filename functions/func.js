@@ -15,12 +15,17 @@ function generateRandom(list) {
       const [v] = list.splice(i, 1);
       return v;
     }
-    throw new Error('Dried out')
+    throw new Error("Dried out");
   };
 }
 
+function oParams({ a = [], b }, c, d = "d") {
+  console.log(a, b, c, d);
+}
+let a = undefined;
+oParams({a})
 
-const g = generateRandom(['a','b','c'])
-console.log(g());
-console.log(g());
-console.log(g());
+// const g = generateRandom(["a", "b", "c"]);
+// console.log(g());
+// console.log(g());
+// console.log(g());
