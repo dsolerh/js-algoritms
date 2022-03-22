@@ -1,6 +1,8 @@
-process.stdin
-  .on("data", (chunk) => {
+async function main() {
+  for await (const chunk of process.stdin) {
     console.log("New Data available");
     console.log(`Chunk read (${chunk.length} bytes)`);
-  })
-  .on("end", () => console.log("End of stream"));
+  }
+  console.log("End of stream");
+}
+main()
