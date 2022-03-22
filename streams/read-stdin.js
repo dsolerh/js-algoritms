@@ -1,9 +1,6 @@
 process.stdin
-  .on("readable", () => {
-    let chunk;
+  .on("data", (chunk) => {
     console.log("New Data available");
-    while ((chunk = process.stdin.read()) !== null) {
-      console.log(`Chunk read (${chunk.length} bytes)`);
-    }
+    console.log(`Chunk read (${chunk.length} bytes)`);
   })
   .on("end", () => console.log("End of stream"));
